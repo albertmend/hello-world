@@ -1,0 +1,10 @@
+<launch>
+	<param name="dist_max" value="2500" />
+	<param name="dist_min" value="400" />
+	<param name="ancho_persona" value="450" />
+	<param name="tolerancia_profundidad_valle" value="230" />
+	<param name="tolerancia_ancho_valle" value="200" />
+	<node name="torso_detector" pkg="torso_detector" type="torso_detector" output="screen"/>
+	<node name="torso_filter" pkg="torso_detector" type="torso_filter" output="screen"/>
+	
+</launch>
